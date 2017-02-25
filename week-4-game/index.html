@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="full">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Crystal Collector Game</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Rock+Salt" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Exo" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h1 class="text-center"><strong>Crystal Collector</strong></h1>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="col-md-8">
+			<p id="instructions">You will be given a random number at the start of the game. 
+			There are four crystals below, click on a crystal to add points to your total score.
+			You win by matching your total score with a random generated number. Go above that random number and you lose!
+			The value of each crystal is hidden until you click on it.
+			The value of each crystal will change each time the game restarts.
+			Good luck!</p>
+		</div>
+		<div class="text-center col-md-4">
+			<p>Wins: <span id="wins">0</span></p>
+			<p>Losses: <span id="loss">0</span></p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="text-center col-md-2">
+			<div class="randomNumber">#</div>
+		</div>
+		<div class="text- center col-md-10">
+			<div class="crystals">
+				<button class="blue"><img src="assets/images/blue_crystal.jpg"></button>
+				<button class="pink"><img src="assets/images/pink_crystal.jpg"></button>
+				<button class="purple"><img src="assets/images/purple_crystal.jpg"></button>
+				<button class="white"><img src="assets/images/white_crystal.jpeg"></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="text-center col-md-6">
+			<p id="totalScore"> Your Total Score is: <span id="totalScore">0</span> </p>
+		</div>
+	</div>
+
+	<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
